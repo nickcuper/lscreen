@@ -28,6 +28,7 @@
      void saveScreenshot();
      void shootScreen();
      void updateCheckBox();
+     void uploadScreenshot();
 
  private:
      void createOptionsGroupBox();
@@ -46,6 +47,7 @@
      QPushButton *newScreenshotButton;
      QPushButton *saveScreenshotButton;
      QPushButton *quitScreenshotButton;
+     QPushButton *uploadScreenshotButton;
 
      QVBoxLayout *mainLayout;
      QGridLayout *optionsGroupBoxLayout;

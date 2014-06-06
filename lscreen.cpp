@@ -21,7 +21,7 @@
      shootScreen();
      delaySpinBox->setValue(5);
 
-     setWindowTitle(tr("Screenshot"));
+     setWindowTitle(tr("LScreen"));
      resize(300, 200);
  }
 
@@ -55,6 +55,12 @@
                                 .arg(format));
      if (!fileName.isEmpty())
          originalPixmap.save(fileName, format.toAscii());
+ }
+
+ // upload to server
+ void LScreen::uploadScreenshot()
+ {
+    ;
  }
 
  void LScreen::shootScreen()
@@ -103,11 +109,14 @@
 
  void LScreen::createButtonsLayout()
  {
-     newScreenshotButton = createButton(tr("New Screenshot"),
+     newScreenshotButton = createButton(tr("New"),
                                         this, SLOT(newScreenshot()));
 
-     saveScreenshotButton = createButton(tr("Save Screenshot"),
+     saveScreenshotButton = createButton(tr("Save"),
                                          this, SLOT(saveScreenshot()));
+
+     uploadScreenshotButton = createButton(tr("Upload"),
+                                         this, SLOT(uploadScreenshot()));
 
      quitScreenshotButton = createButton(tr("Quit"), this, SLOT(close()));
 
@@ -116,6 +125,7 @@
      buttonsLayout->addWidget(newScreenshotButton);
      buttonsLayout->addWidget(saveScreenshotButton);
      buttonsLayout->addWidget(quitScreenshotButton);
+     buttonsLayout->addWidget(uploadScreenshotButton);
  }
 
  QPushButton *LScreen::createButton(const QString &text, QWidget *receiver,

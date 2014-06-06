@@ -12,11 +12,10 @@ TARGET = LScreen
 TEMPLATE = app
 
 
-SOURCES += main.cpp\
-        mainwindow.cpp \
-    lscreen.cpp
+SOURCES += lscreen.cpp\
+    main.cpp
 
-HEADERS  += mainwindow.h \
+HEADERS  += \
     lscreen.h
 
 FORMS    += mainwindow.ui

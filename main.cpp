@@ -1,11 +1,12 @@
 #include <QApplication>
-#include "mainwindow.h"
+#include "lscreen.h"
 
 int main(int argc, char *argv[])
 {
+
     QApplication a(argc, argv);
-    MainWindow w;
-    w.show();
+    LScreen lscreen;
+    lscreen.show();
     
     return a.exec();
 }
