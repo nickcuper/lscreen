@@ -60,7 +60,11 @@
  // upload to server
  void LScreen::uploadScreenshot()
  {
-    ;
+    // QNetworkRequest request;
+    //  request.setUrl(QUrl("http://qt.nokia.com"));
+    //  request.setRawHeader("User-Agent", "MyOwnBrowser 1.0");
+
+
  }
 
  void LScreen::shootScreen()

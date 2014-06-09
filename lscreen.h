@@ -3,6 +3,7 @@
 
  #include <QPixmap>
  #include <QWidget>
+ #include <QtNetwork/QNetworkRequest>
 
  class QCheckBox;
  class QGridLayout;
@@ -12,6 +13,7 @@
  class QPushButton;
  class QSpinBox;
  class QVBoxLayout;
+ class QNetworkRequest;
 
  class LScreen : public QWidget
  {
